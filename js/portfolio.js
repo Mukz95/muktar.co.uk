@@ -1,10 +1,5 @@
 jQuery(document).ready(function($){    
 
-    $(function() {
-        $('.slideshow').square1();
-    });
-
-
     $(".all-portfolios").isotope({
         itemSelector: '.single-portfolio',
         layoutMode: 'fitRows',
