@@ -1,0 +1,36 @@
+.portfolio-filter {}
+ul.filter {color: #2e2e2e}
+ul.filter li{display: inline-block;font-size: 16px;font-weight: 400;padding-right: 25px;padding-left: 25px;position: relative;cursor: pointer}
+ul.filter li.active{color: #549DC5}
+ul.filter li:after{content: "/";position: absolute;right: 0;top: 0;color: #B4B4B4}
+ul.filter li:last-child{}
+ul.filter li:last-child:after{display: none}
+
+
+
+.all-portfolios {
+    height: 100%;
+}
+
+
+
+.portfolioFilter {
+    padding: 15px 0;
+  }
+  
+  .portfolioFilter a {
+    margin-right: 6px;
+    color: #666;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    padding: 4px 15px;
+    border-radius: 50px;
+    display: inline-block;
+  }
+  
+  .portfolioFilter a.current {
+    background: #1e1e1e;
+    border: 1px solid #1e1e1e;
+    color: #f9f9f9;
+  }
+
