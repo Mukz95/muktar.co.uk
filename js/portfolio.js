@@ -1,10 +1,4 @@
 $(document).ready(function($){    
-
-    $(".all-portfolios").isotope({
-        itemSelector: '.single-portfolio',
-        layoutMode: 'fitRows',
-    });
-    
     $('div.filter div').click(function(){ 
         
       $("div.filter div").removeClass("active");
@@ -106,6 +100,13 @@ $.fn.slider = function ()
 
 // Init
 $("#slider").slider();
+
+
+$(".all-portfolios").isotope({
+    itemSelector: '.single-portfolio',
+    layoutMode: 'fitRows',
+});
+
 
 
  /*
