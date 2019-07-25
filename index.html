@@ -6,6 +6,9 @@
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/portfolio.js"></script>
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/1.0/css/imagehover.min.css">
@@ -208,7 +211,7 @@
             <div class="container">
                 <div class="portfolio-filter text-uppercase text-center">
                         <div style="background-color: #EBEBEB; color: #444649;" class="filter row projects-row">
-                            <div class="col l3 heading active" data-filter="*">ALL
+                            <div class="col l3 heading active-tabs" data-filter="*">ALL
                             </div>
                             <div class="col l3 heading tabz" data-filter=".web-design">Web Apps
                             </div>
@@ -472,7 +475,6 @@
                                         </div>
                                     </div>
                                     
-                                    <div class="divider"></div>
                                     <div class="row">
                                         <div class="col m12">
                                          <p class="right-align"><button class="btn btn-large waves-effect waves-light" type="button" name="action">Send Message</button></p>
@@ -486,9 +488,6 @@
     </section>
     <script>
 
-        $(window).load(function() {
-        $.getScript('js/isotope.pkgd.min.js', function() { });
-         });
         window.onscroll = function(){
             StickyFunction();
         }

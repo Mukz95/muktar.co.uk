@@ -1,8 +1,8 @@
 $(document).ready(function($){    
     $('div.filter div').click(function(){ 
         
-      $("div.filter div").removeClass("active");
-      $(this).addClass("active");        
+      $("div.filter div").removeClass("active-tabs");
+      $(this).addClass("active-tabs");        
 
 		var selector = $(this).attr('data-filter'); 
         $(".all-portfolios").isotope({ 
@@ -102,10 +102,13 @@ $.fn.slider = function ()
 $("#slider").slider();
 
 
-$(".all-portfolios").isotope({
-    itemSelector: '.single-portfolio',
-    layoutMode: 'fitRows',
-});
+$(".all-portfolios").imagesLoaded(function(){
+	$(".all-portfolios").isotope({
+		itemSelector: '.single-portfolio',
+		layoutMode: 'fitRows',
+	});
+})
+
 
 
 

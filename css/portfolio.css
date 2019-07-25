@@ -13,7 +13,9 @@ ul.filter li:last-child:after{display: none}
 }
 
 
-
+label.active{
+  color: #1e1e1e
+}
 .portfolioFilter {
     padding: 15px 0;
   }

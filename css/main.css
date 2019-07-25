@@ -222,6 +222,10 @@ justify-content: center;
 /*************tabs*****************/
 
 .active{
+    color: white !important;
+}
+
+.active-tabs{
     background-color: #F45B69 !important;
     color: white !important;
 }
