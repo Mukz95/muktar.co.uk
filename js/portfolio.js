@@ -4,15 +4,19 @@ $(document).ready(function($){
       $("div.filter div").removeClass("active");
       $(this).addClass("active");        
 
-        var selector = $(this).attr('data-filter'); 
-        $(".all-portfolios").isotope({ 
-            filter: selector, 
-            animationOptions: { 
-                duration: 750, 
-                easing: 'linear', 
-                queue: false, 
-            } 
-        }); 
+		var selector = $(this).attr('data-filter'); 
+		$(window).load(function(){
+			$(".all-portfolios").isotope({ 
+				filter: selector, 
+				animationOptions: { 
+					duration: 750, 
+					easing: 'linear', 
+					queue: false, 
+				} 
+			}); 
+
+		})
+   
       return false; 
     }); 
 
